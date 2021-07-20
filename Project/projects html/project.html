@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../project style/bootstrap.min.css">
+    <link rel="stylesheet" href="../project style/project.css">
+    <script src="../project javascript/project.js" defer></script>
+    <title>projects</title>
+</head>
+
+<body>
+    <header class="section-1 container-fluid ">
+        <h2 id="project-name" class="breadcrumbs-custom-title">Projects</h2>
+        <nav class="breadcrumb-sec text-center">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-items"><a href="#">Home</a></li>
+                <li aria-current="page"> <a href="">Projects</a> </li>
+                <!-- <li class="active" aria-current="page">Single Project</li> -->
+            </ol>
+        </nav>
+    </header>
+    <!-- <nav class="">
+    <div class=" navbar-collapse navbar-expand-lg" id="navbarNav">
+        <ul class=" navbar-nav ">
+            <li class="nav-item "><a class="nav-link " href=" ">ALL</a> </li>
+            <li class="nav-item "><a class="nav-link " href=" ">CONSTRUCTION</a> </li>
+            <li class="nav-item "><a class="nav-link " href=" ">REMODELING</a> </li>
+            <li class="nav-item "><a class="nav-link " href=" ">INTERIOR DESIGN</a> </li>
+        </ul>
+    </div>
+   </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-light mt-5">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="myitem nav-link active" onclick="filterSelection('all')" aria-current="page"
+                            href="#">ALL</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="myitem nav-link px-3" onclick="filterSelection('construction')"
+                            href="#">CONSTRUCTION</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="myitem nav-link" onclick="filterSelection('remodeling')" href="#">REMODELING</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" onclick="filterSelection('interior-design')" href="#">INTERIOR DESIGN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mycontainer">
+        <div class="row row-30">
+            <div class="col-sm-6 col-lg-4 mycol construction remodeling interior-design filterDiv"
+                data-filter="contruction">
+                <a href="singleproject1.html">
+                    <img class="face project-img"
+                        src="https://livedemo00.template-help.com/wt_prod-2277/images/project-01-742x574.jpg" alt=""
+                        width="370" height="287">
+                    <div class="face img-data-content">
+                        <h5 class="img-data-title">Living Room Update</h5>
+                        <p class="img-data-text">This renovation project included several living room interior updates
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+            <div class="col-sm-6 col-lg-4 mycol construction  remodeling interior-design filterDiv"
+                data-filter="contruction">
+                <a href="singleproject2.html"><img class="face project-img"
+                        src="https://livedemo00.template-help.com/wt_prod-2277/images/project-02-742x574.jpg" alt=""
+                        width="370" height="287">
+                    <div class="face img-data-content">
+                        <h5 class="img-data-title">Exterior Remodeling</h5>
+                        <p class="img-data-text">We worked on this project throught winter</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mycol construction  remodeling interior-design filterDiv"
+                data-filter="interior design">
+                <a href="singleproject3.html"><img class="face project-img "
+                        src="https://livedemo00.template-help.com/wt_prod-2277/images/project-03-742x574.jpg" alt=""
+                        width="370" height="287">
+                    <div class="face img-data-content">
+                        <h5 class="img-data-title">Bathroom Renovation</h5>
+                        <p class="img-data-text">Here we introduced improvements to a 1980-styled bathroom.</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="row myrow">
+            <div class="col-sm-6 col-lg-4 mycol construction  remodeling interior-design filterDiv"
+                data-filter="interior design">
+                <a href="singleproject4.html"><img class="face project-img "
+                        src="https://livedemo00.template-help.com/wt_prod-2277/images/project-04-742x574.jpg" alt=""
+                        width="370" height="287">
+                    <div class="face img-data-content">
+                        <h5 class="img-data-title">San Diego Childcare Center</h5>
+                        <p class="img-data-text">This center is result of our cooperation of san diego
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mycol construction  remodeling interior-design filterDiv"
+                data-filter="remodeling">
+                <a href="singleproject5.html"><img class="face project-img"
+                        src="https://livedemo00.template-help.com/wt_prod-2277/images/project-05-742x574.jpg" alt=""
+                        width="370" height="287">
+                    <div class="face img-data-content">
+                        <h5 class="img-data-title">1935 House renovation</h5>
+                        <p class="img-data-text">This house required some extra maintance work on windows and roof</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4 mycol construction remodeling interior-design filterDiv"
+                data-filter="remodeling">
+                <a href="singleproject6.html"><img class="face project-img "
+                        src="https://livedemo00.template-help.com/wt_prod-2277/images/project-06-742x574.jpg" alt=""
+                        width="370" height="287">
+                    <div class="face img-data-content">
+                        <h5 class="img-data-title">Kitchen redisign</h5>
+                        <p class="img-data-text">We transformed this kitchen with new furniture and finishing.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
